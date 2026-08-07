@@ -6,7 +6,7 @@ import { Reveal } from "./ui/Reveal";
 import { Aurora } from "./Aurora";
 
 export function Resources() {
-  const href = site.hotmart || "#contacto";
+  const href = site.serApp || "#contacto";
 
   return (
     <section id="recursos" className="relative overflow-hidden bg-ink py-28 lg:py-36">

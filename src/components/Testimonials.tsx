@@ -1,4 +1,4 @@
-import { Quote } from "lucide-react";
+import { Quote, UserRound } from "lucide-react";
 import { testimonials } from "../data/content";
 import { SectionHeading } from "./ui/SectionHeading";
 import { Reveal } from "./ui/Reveal";
@@ -22,11 +22,18 @@ export function Testimonials() {
                 <blockquote className="flex-1 text-balance font-display text-lg italic leading-snug text-graphite">
                   “{t.quote}”
                 </blockquote>
-                <figcaption className="border-t border-graphite/10 pt-4">
-                  <div className="text-sm font-medium text-graphite">
-                    {t.name}
+                <figcaption className="flex items-center gap-3 border-t border-graphite/10 pt-4">
+                  {/* Espacio reservado para foto del cliente — reemplaza por
+                     una <img> cuando tengas el material. */}
+                  <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-dashed border-graphite/25 text-graphite-muted/50">
+                    <UserRound className="h-4 w-4" />
+                  </span>
+                  <div>
+                    <div className="text-sm font-medium text-graphite">
+                      {t.name}
+                    </div>
+                    <div className="text-xs text-graphite-muted">{t.role}</div>
                   </div>
-                  <div className="text-xs text-graphite-muted">{t.role}</div>
                 </figcaption>
               </figure>
             </Reveal>

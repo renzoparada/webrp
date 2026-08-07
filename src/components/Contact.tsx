@@ -31,6 +31,14 @@ function LinkedInIcon({ className }: { className?: string }) {
   );
 }
 
+function FacebookIcon({ className }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" fill="currentColor" className={className}>
+      <path d="M13.5 21v-8h2.7l.4-3.1h-3.1V8c0-.9.25-1.5 1.55-1.5H16.7V3.7C16.4 3.66 15.4 3.57 14.24 3.57c-2.35 0-3.96 1.43-3.96 4.06v2.26H7.56v3.1h2.72v8z" />
+    </svg>
+  );
+}
+
 export function Contact() {
   const [submitted, setSubmitted] = useState(false);
 
@@ -181,9 +189,15 @@ export function Contact() {
                     <TikTokIcon className="h-4 w-4" />
                   </SocialIcon>
                 )}
+                {site.social.facebook && (
+                  <SocialIcon href={site.social.facebook}>
+                    <FacebookIcon className="h-[18px] w-[18px]" />
+                  </SocialIcon>
+                )}
                 {!site.social.instagram &&
                   !site.social.linkedin &&
-                  !site.social.tiktok && (
+                  !site.social.tiktok &&
+                  !site.social.facebook && (
                     <span className="text-sm text-bone-muted/60">
                       Añade tus enlaces en el archivo de contenido.
                     </span>

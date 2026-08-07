@@ -1,4 +1,4 @@
-import { Target, Wrench, TrendingUp, PenLine } from "lucide-react";
+import { Target, Wrench, TrendingUp, PenLine, ImagePlus } from "lucide-react";
 import { caseStudies } from "../data/content";
 import { SectionHeading } from "./ui/SectionHeading";
 import { Reveal } from "./ui/Reveal";
@@ -25,6 +25,13 @@ export function Results() {
           {caseStudies.map((c, i) => (
             <Reveal key={i} delay={i * 0.08}>
               <div className="flex h-full flex-col gap-6 rounded-2xl border border-dashed border-white/15 bg-white/[0.02] p-8 transition-colors duration-500 hover:border-ember/40 hover:bg-white/[0.04]">
+                {/* Espacio reservado para foto/video del proyecto — reemplaza
+                   este bloque por una <img>/<video> cuando tengas el material. */}
+                <div className="flex aspect-video w-full items-center justify-center gap-2 rounded-xl border border-dashed border-white/10 bg-white/[0.02] text-bone-muted/50">
+                  <ImagePlus className="h-5 w-5" />
+                  <span className="text-xs">Foto o video del proyecto</span>
+                </div>
+
                 <span className="eyebrow text-bone-muted/60">
                   Caso 0{i + 1}
                 </span>

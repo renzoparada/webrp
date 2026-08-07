@@ -31,22 +31,18 @@ la información de contacto.
 
 ### Pendiente por completar (marcado con `// TODO` en `content.ts`)
 
-El sitio se entrega funcional con textos reales del copy original y
-placeholders honestos (sin datos inventados) en los siguientes puntos:
-
-| Campo | Dónde | Qué falta |
+| Campo | Dónde | Estado |
 |---|---|---|
-| `site.whatsapp` | Contacto | Número real en formato internacional (ej. `"51987654321"`) |
-| `site.calendly` | Contacto / Recursos | Enlace real de agendamiento |
-| `site.hotmart` | Recursos | Enlace real del Project Manager Pro System |
-| `site.social.*` | Contacto | Instagram / LinkedIn / TikTok / YouTube |
-| `caseStudies` | Resultados | 3 casos reales (sector, reto, intervención, resultado) |
-| `testimonials` | Testimonios | Citas reales de clientes con nombre y cargo |
-| Foto de perfil | `src/components/About.tsx` | Reemplazar el monograma "RP" por una foto real |
+| `site.whatsapp` | Contacto | ✅ Cargado |
+| `site.social.*` | Contacto | ✅ Instagram / LinkedIn / TikTok / Facebook → `@renzoparada` |
+| `site.calendly` | Contacto / Recursos | Pendiente — Renzo está construyendo su propia app de agendamiento. El botón "Agenda una llamada" queda oculto hasta que haya enlace. |
+| `site.serApp` | Recursos | Pendiente — reemplaza a Hotmart como canal del Project Manager Pro System. Sin enlace, el CTA cae a `#contacto`. |
+| `caseStudies` | Resultados | 3 casos reales (sector, reto, intervención, resultado). Cada card ya reserva un recuadro para foto/video del proyecto. |
+| `testimonials` | Testimonios | Citas reales de clientes. Cada card ya reserva un avatar circular para foto del cliente. |
+| Foto de perfil | `src/components/About.tsx` | Pendiente — reemplazar el monograma "RP" por una foto real (súbela como archivo adjunto, no pegada en el chat, para que quede accesible en el repo). |
 
-Mientras esos campos estén vacíos, la UI los oculta u ofrece una alternativa
-razonable (por ejemplo, el botón de WhatsApp no se muestra si no hay número;
-el CTA de Hotmart apunta a la sección de contacto).
+Mientras `calendly`/`serApp` estén vacíos, la UI cae a una alternativa
+razonable en vez de mostrar un enlace roto.
 
 El formulario de contacto no tiene backend: al enviarse abre el cliente de
 correo del visitante con un `mailto:` prellenado hacia `site.email`. Si más

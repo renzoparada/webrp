@@ -15,20 +15,22 @@ export const site = {
   role: "Consultor · Facilitador · Diseñador de Experiencias",
   domain: "renzoparada.com",
   locale: "es",
-  // TODO: confirma el email que quieres publicar (se usa como respaldo del formulario)
   email: "renzoparada@gmail.com",
-  // TODO: agrega tu número real en formato internacional sin signos, ej. "51987654321"
-  whatsapp: "",
-  // TODO: enlace real de Calendly u otra herramienta de agendamiento
+  // Formato internacional sin "+" ni espacios, listo para wa.me
+  whatsapp: "59177038479",
+  // TODO: Renzo está construyendo su propia app de agendamiento — sin enlace
+  // todavía. En cuanto exista, va aquí y el botón "Agenda una llamada"
+  // aparece solo (hoy está oculto porque este campo está vacío).
   calendly: "",
-  // TODO: enlace real del producto en Hotmart
-  hotmart: "",
+  // TODO: enlace real de la app "SER" (reemplaza a Hotmart como canal de venta
+  // del Project Manager Pro System). Renzo está armando esa app — en cuanto
+  // tenga URL, va aquí. Hasta entonces el CTA de Recursos cae a #contacto.
+  serApp: "",
   social: {
-    // TODO: agrega tus handles/enlaces reales o deja vacío para ocultar el ícono
-    instagram: "",
-    linkedin: "",
-    tiktok: "",
-    youtube: "",
+    instagram: "https://www.instagram.com/renzoparada",
+    linkedin: "https://www.linkedin.com/in/renzoparada",
+    tiktok: "https://www.tiktok.com/@renzoparada",
+    facebook: "https://www.facebook.com/renzoparada",
   },
 };
 
@@ -169,6 +171,8 @@ export type CaseStudy = {
 
 // TODO: reemplaza estos tres casos con proyectos reales (cliente/sector, reto,
 // intervención y un resultado medible). Se muestran como placeholders editables.
+// Cada card ya reserva un espacio para foto/video (ver Results.tsx) — cuando
+// tengas el material, reemplaza ese bloque por una <img>/<video> real.
 export const caseStudies: CaseStudy[] = [
   {
     sector: "Añade el sector o industria",
@@ -197,6 +201,8 @@ export type Testimonial = {
 };
 
 // TODO: reemplaza con testimonios reales de tus clientes (cita + nombre + cargo/empresa).
+// Cada card reserva un espacio circular para una foto (o miniatura de video)
+// del cliente — ver Testimonials.tsx.
 export const testimonials: Testimonial[] = [
   {
     quote:
@@ -221,7 +227,7 @@ export const testimonials: Testimonial[] = [
 export const resource = {
   eyebrow: "Recursos",
   heading: "Lleva la metodología a tu propio ritmo",
-  text: "Si buscas una herramienta completa para gestionar proyectos de principio a fin, conoce el Project Manager Pro System: un sistema integral con plantillas, dashboards y certificación, pensado para profesionales de habla hispana.",
+  text: "Si buscas una herramienta completa para gestionar proyectos de principio a fin, conoce el Project Manager Pro System: un sistema integral con plantillas, dashboards y certificación, pensado para profesionales de habla hispana. Muy pronto disponible en SER, la app propia de Renzo.",
   productName: "Project Manager Pro System",
   cta: "Conoce el Project Manager Pro System",
 };
