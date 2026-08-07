@@ -35,14 +35,21 @@ la información de contacto.
 |---|---|---|
 | `site.whatsapp` | Contacto | ✅ Cargado |
 | `site.social.*` | Contacto | ✅ Instagram / LinkedIn / TikTok / Facebook → `@renzoparada` |
+| Foto de perfil | `src/components/About.tsx` | ✅ Retrato real + foto accent de la misión Disney |
+| Foto de escenario | `src/components/StageBand.tsx` | ✅ Banda cinematográfica entre Sobre mí y Servicios |
+| Logo Emprendedores Makeover | `src/components/About.tsx` | ✅ Badge en la fila de credenciales |
 | `site.calendly` | Contacto / Recursos | Pendiente — Renzo está construyendo su propia app de agendamiento. El botón "Agenda una llamada" queda oculto hasta que haya enlace. |
 | `site.serApp` | Recursos | Pendiente — reemplaza a Hotmart como canal del Project Manager Pro System. Sin enlace, el CTA cae a `#contacto`. |
+| `about.brandLink` | Sobre mí | Pendiente — enlace real de Emprendedores Makeover. Sin enlace, el badge se muestra sin ser clicable. |
 | `caseStudies` | Resultados | 3 casos reales (sector, reto, intervención, resultado). Cada card ya reserva un recuadro para foto/video del proyecto. |
 | `testimonials` | Testimonios | Citas reales de clientes. Cada card ya reserva un avatar circular para foto del cliente. |
-| Foto de perfil | `src/components/About.tsx` | Pendiente — reemplazar el monograma "RP" por una foto real (súbela como archivo adjunto, no pegada en el chat, para que quede accesible en el repo). |
 
-Mientras `calendly`/`serApp` estén vacíos, la UI cae a una alternativa
-razonable en vez de mostrar un enlace roto.
+Mientras `calendly`/`serApp`/`brandLink` estén vacíos, la UI cae a una
+alternativa razonable en vez de mostrar un enlace roto.
+
+Las fotos reales viven en `src/assets/photos/` (optimizadas: ~620 KB en total
+las cuatro, bajadas desde Google Drive y comprimidas a los tamaños en que
+realmente se muestran).
 
 El formulario de contacto no tiene backend: al enviarse abre el cliente de
 correo del visitante con un `mailto:` prellenado hacia `site.email`. Si más

@@ -2,12 +2,14 @@ import { motion } from "framer-motion";
 import { Sparkles } from "lucide-react";
 import { about } from "../data/content";
 import { Reveal, RevealGroup, RevealItem } from "./ui/Reveal";
+import retrato from "../assets/photos/renzo-retrato.jpg";
+import disney from "../assets/photos/renzo-disney.jpg";
+import logoEmprendedoresMakeover from "../assets/photos/logo-emprendedores-makeover.png";
 
 export function About() {
   return (
     <section id="sobre-mi" className="relative bg-paper py-28 lg:py-36">
       <div className="mx-auto grid max-w-7xl grid-cols-1 gap-16 px-6 lg:grid-cols-[0.85fr_1.15fr] lg:gap-20 lg:px-10">
-        {/* Portrait placeholder — swap the div below for a real <img> when a photo is available */}
         <Reveal className="order-2 lg:order-1">
           <div className="relative mx-auto aspect-[4/5] w-full max-w-sm">
             <motion.div
@@ -16,16 +18,31 @@ export function About() {
               animate={{ rotate: [0, 2, 0] }}
               transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
             />
-            <div className="relative h-full w-full overflow-hidden rounded-[1.75rem] bg-gradient-to-br from-ink via-ink-2 to-ink shadow-[0_30px_60px_-20px_rgba(20,18,15,0.35)]">
-              <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(255,90,46,0.35),transparent_45%),radial-gradient(circle_at_80%_80%,rgba(139,124,255,0.3),transparent_50%)]" />
-              <div className="grain absolute inset-0" />
-              <div className="relative flex h-full w-full items-center justify-center">
-                <span className="font-display text-[7rem] italic text-bone/90">
-                  RP
-                </span>
-              </div>
+            <div className="relative h-full w-full overflow-hidden rounded-[1.75rem] shadow-[0_30px_60px_-20px_rgba(20,18,15,0.35)]">
+              <img
+                src={retrato}
+                alt="Renzo Parada"
+                className="h-full w-full object-cover object-top"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-ink/40 via-transparent to-transparent" />
             </div>
-            <div className="absolute -bottom-6 -right-6 flex items-center gap-2 rounded-full border border-graphite/10 bg-paper px-4 py-2.5 shadow-lg">
+
+            {/* Foto accent — misión Disney, refuerzo visual del Método Disney */}
+            <motion.div
+              className="absolute -bottom-10 -left-10 hidden w-36 overflow-hidden rounded-2xl border-4 border-paper shadow-xl sm:block"
+              initial={{ opacity: 0, rotate: -6, y: 10 }}
+              whileInView={{ opacity: 1, rotate: -6, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
+            >
+              <img
+                src={disney}
+                alt="Renzo Parada en su misión de formación Disney"
+                className="aspect-[3/4] w-full object-cover"
+              />
+            </motion.div>
+
+            <div className="absolute -top-4 -right-4 flex items-center gap-2 rounded-full border border-graphite/10 bg-paper px-4 py-2.5 shadow-lg">
               <Sparkles className="h-4 w-4 text-ember" />
               <span className="text-xs font-medium text-graphite">
                 LEGO® Serious Play® · Método Disney
@@ -65,9 +82,47 @@ export function About() {
                 </span>
               </RevealItem>
             ))}
+            <RevealItem>
+              <BrandBadge href={about.brandLink} />
+            </RevealItem>
           </RevealGroup>
         </div>
       </div>
     </section>
+  );
+}
+
+/** Renders as a link once about.brandLink is set; a plain badge until then. */
+function BrandBadge({ href }: { href: string }) {
+  const classes =
+    "inline-flex items-center gap-2 rounded-full border border-graphite/15 bg-white/60 py-1.5 pl-1.5 pr-4 text-sm text-graphite transition-colors";
+  const logo = (
+    <img
+      src={logoEmprendedoresMakeover}
+      alt="Emprendedores Makeover"
+      className="h-7 w-7 rounded-full object-cover"
+    />
+  );
+
+  if (!href) {
+    return (
+      <span className={classes}>
+        {logo}
+        Emprendedores Makeover
+      </span>
+    );
+  }
+
+  return (
+    <a
+      href={href}
+      target="_blank"
+      rel="noreferrer"
+      data-cursor-hover
+      className={`${classes} hover:border-ember/40`}
+    >
+      {logo}
+      Emprendedores Makeover
+    </a>
   );
 }

@@ -4,6 +4,7 @@ import { Cursor } from "./components/Cursor";
 import { Navbar } from "./components/Navbar";
 import { Hero } from "./components/Hero";
 import { About } from "./components/About";
+import { StageBand } from "./components/StageBand";
 import { Services } from "./components/Services";
 import { Methodology } from "./components/Methodology";
 import { Results } from "./components/Results";
@@ -23,6 +24,7 @@ function App() {
       <main>
         <Hero />
         <About />
+        <StageBand />
         <Services />
         <Methodology />
         <Results />

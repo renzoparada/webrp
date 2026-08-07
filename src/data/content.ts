@@ -76,6 +76,8 @@ export const about = {
     "Creador del Project Manager Pro System",
     "Consultor y Asesor Empresarial",
   ],
+  // TODO: enlace real de Emprendedores Makeover (web, Instagram, etc.)
+  brandLink: "",
 };
 
 export type Pillar = {
