@@ -9,8 +9,8 @@ import signature from "../../assets/photos/firma-renzo-blanco.png";
  */
 export function Logo({
   className,
-  markSize = "h-7 w-7",
-  signatureHeight = "h-5",
+  markSize = "h-14 w-14",
+  signatureHeight = "h-10",
 }: {
   className?: string;
   markSize?: string;

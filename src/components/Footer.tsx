@@ -8,7 +8,7 @@ export function Footer() {
       <div className="mx-auto flex max-w-7xl flex-col gap-10 px-6 lg:px-10">
         <div className="flex flex-col items-start justify-between gap-8 lg:flex-row lg:items-end">
           <div>
-            <Logo markSize="h-9 w-9" signatureHeight="h-7" />
+            <Logo markSize="h-[4.5rem] w-[4.5rem]" signatureHeight="h-14" />
             <p className="mt-3 max-w-sm text-sm text-bone-muted">
               {footer.tagline}
             </p>
