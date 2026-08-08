@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import { motion, useScroll, AnimatePresence } from "framer-motion";
 import { Menu, X, ArrowUpRight } from "lucide-react";
-import { nav, site, hero } from "../data/content";
+import { nav, hero } from "../data/content";
+import { Logo } from "./ui/Logo";
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -31,11 +32,8 @@ export function Navbar() {
         }`}
       >
         <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-10">
-          <a
-            href="#top"
-            className="font-display text-lg italic tracking-tight text-bone"
-          >
-            {site.name}
+          <a href="#top" data-cursor-hover>
+            <Logo />
           </a>
 
           <ul className="hidden items-center gap-8 lg:flex">
@@ -80,9 +78,7 @@ export function Navbar() {
             className="fixed inset-0 z-[60] flex flex-col bg-ink px-6 py-5 lg:hidden"
           >
             <div className="flex items-center justify-between">
-              <span className="font-display text-lg italic text-bone">
-                {site.name}
-              </span>
+              <Logo />
               <button
                 aria-label="Cerrar menú"
                 className="text-bone"

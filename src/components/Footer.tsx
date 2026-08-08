@@ -1,5 +1,6 @@
 import { ArrowUp } from "lucide-react";
 import { nav, site, footer } from "../data/content";
+import { Logo } from "./ui/Logo";
 
 export function Footer() {
   return (
@@ -7,10 +8,8 @@ export function Footer() {
       <div className="mx-auto flex max-w-7xl flex-col gap-10 px-6 lg:px-10">
         <div className="flex flex-col items-start justify-between gap-8 lg:flex-row lg:items-end">
           <div>
-            <span className="font-display text-2xl italic tracking-tight text-bone">
-              {site.name}
-            </span>
-            <p className="mt-2 max-w-sm text-sm text-bone-muted">
+            <Logo markSize="h-9 w-9" signatureHeight="h-7" />
+            <p className="mt-3 max-w-sm text-sm text-bone-muted">
               {footer.tagline}
             </p>
           </div>
