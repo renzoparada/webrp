@@ -29,8 +29,8 @@ export const site = {
   social: {
     instagram: "https://www.instagram.com/renzoparada",
     linkedin: "https://www.linkedin.com/in/renzoparada",
-    tiktok: "https://www.tiktok.com/@renzoparada",
-    facebook: "https://www.facebook.com/renzoparada",
+    tiktok: "https://www.tiktok.com/@renzo.parada",
+    facebook: "https://www.facebook.com/renzoparadaoficial",
   },
 };
 
