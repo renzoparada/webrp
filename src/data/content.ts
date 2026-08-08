@@ -78,7 +78,6 @@ export const about = {
   credentials: [
     "Facilitador LEGO® Serious Play®",
     "Especialista en Método Disney de Atención al Cliente",
-    "Creador del Project Manager Pro System",
     "Consultor y Asesor Empresarial",
   ],
   // TODO: enlace real de Emprendedores Makeover (web, Instagram, etc.)
