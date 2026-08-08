@@ -121,7 +121,7 @@ export const pillars: Pillar[] = [
     audience:
       "Marcas y empresas que quieren que cada punto de contacto sea memorable",
     includes:
-      "Método Disney de atención al cliente, creación de experiencias de marca y conceptos y espacios de entretenimiento",
+      "Método Disney de atención al cliente, creación de experiencias de marca, conceptos y espacios de entretenimiento",
     result: "Clientes que no solo compran: vuelven y recomiendan",
     cta: "Diseñemos tu experiencia",
   },
