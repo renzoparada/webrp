@@ -72,7 +72,7 @@ export const about = {
   heading: "No soy un consultor más",
   paragraphs: [
     "Soy Renzo Parada. He construido mi trabajo en la intersección de tres mundos que casi nunca se juntan: la gestión de proyectos, las ventas y el diseño de experiencias.",
-    "Soy Facilitador certificado en LEGO® Serious Play®, especialista en el Método Disney de atención al cliente, y creador del Project Manager Pro System, un framework integral de gestión de proyectos usado por profesionales en toda Latinoamérica.",
+    "Soy Facilitador certificado en LEGO® Serious Play®, especialista en el Método Disney de atención al cliente, y creador de experiencias integrales y omnicanales que potencian resultados en toda Latinoamérica.",
     "Mi trabajo no se trata de teoría. Se trata de sentarme con tu equipo, entender tu negocio y construir contigo un sistema — o una experiencia — que realmente funcione.",
   ],
   credentials: [
