@@ -233,7 +233,7 @@ export const testimonials: Testimonial[] = [
 export const resource = {
   eyebrow: "Recursos",
   heading: "Lleva la metodología a tu propio ritmo",
-  text: "Si buscas una herramienta completa para gestionar proyectos de principio a fin, conoce el Project Manager Pro System: un sistema integral con plantillas, dashboards y certificación, pensado para profesionales de habla hispana. Muy pronto disponible en SER, la app propia de Renzo.",
+  text: "Si buscas una herramienta completa para gestionar proyectos de principio a fin, conoce el Project Manager Pro System: un sistema integral con plantillas, dashboards y certificación, pensado para profesionales de habla hispana.",
   productName: "Project Manager Pro System",
   cta: "Conoce el Project Manager Pro System",
 };
