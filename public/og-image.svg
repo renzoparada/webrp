@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <radialGradient id="g1" cx="20%" cy="15%" r="60%">
+      <stop offset="0%" stop-color="#FF5A2E" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#FF5A2E" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="g2" cx="85%" cy="75%" r="55%">
+      <stop offset="0%" stop-color="#8B7CFF" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#8B7CFF" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="#0A0A0B"/>
+  <rect width="1200" height="630" fill="url(#g1)"/>
+  <rect width="1200" height="630" fill="url(#g2)"/>
+  <text x="80" y="260" font-family="Georgia, serif" font-size="76" fill="#F5F3EF" font-style="italic">Renzo Parada</text>
+  <text x="80" y="330" font-family="Georgia, serif" font-size="44" fill="#F5F3EF">Consultoría · Formación · Experiencias</text>
+  <text x="80" y="400" font-family="Arial, sans-serif" font-size="26" fill="#A6A29C">Resultados que se sienten y se miden</text>
+  <circle cx="1080" cy="120" r="6" fill="#FF5A2E"/>
+</svg>
