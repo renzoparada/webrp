@@ -58,7 +58,12 @@ export const hero = {
   stats: [
     { value: 4, suffix: "", label: "Pilares de transformación" },
     { value: 3, suffix: "", label: "Metodologías propias certificadas" },
-    { value: 1, suffix: "", label: "Framework propio: PM Pro System" },
+    {
+      value: 1,
+      suffix: "",
+      label:
+        "Propósito: potenciar personas, equipos y empresas para lograr resultados extraordinarios",
+    },
   ],
 };
 
