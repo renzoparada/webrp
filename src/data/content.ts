@@ -230,6 +230,13 @@ export const testimonials: Testimonial[] = [
   },
 ];
 
+export const gallery = {
+  eyebrow: "Presentaciones",
+  heading: "Momentos en el escenario",
+  description:
+    "Charlas, conferencias y facilitaciones en vivo — la evidencia de que esto no es solo teoría.",
+};
+
 export const resource = {
   eyebrow: "Recursos",
   heading: "Lleva la metodología a tu propio ritmo",
