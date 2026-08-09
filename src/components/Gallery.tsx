@@ -3,7 +3,10 @@ import { ChevronLeft, ChevronRight, ImagePlus } from "lucide-react";
 import { gallery } from "../data/content";
 import { SectionHeading } from "./ui/SectionHeading";
 import { Reveal } from "./ui/Reveal";
-import escenario from "../assets/photos/renzo-escenario.jpg";
+import publico1 from "../assets/photos/publico1.jpg";
+import publico2 from "../assets/photos/publico2.jpg";
+import publico3 from "../assets/photos/publico3.jpg";
+import publico4 from "../assets/photos/publico4.jpg";
 
 type GalleryPhoto = {
   src?: string;
@@ -13,20 +16,17 @@ type GalleryPhoto = {
 /**
  * Fotos del carrusel. Para añadir una nueva presentación:
  * 1. Copia la foto a src/assets/photos/
- * 2. Impórtala arriba, junto a `escenario`
+ * 2. Impórtala arriba, junto a `publico1`
  *    (import miFoto from "../assets/photos/mi-foto.jpg";)
  * 3. Agrega { src: miFoto, alt: "descripción de la foto" } al array.
  * Los slots sin `src` son espacio reservado — reemplázalos o bórralos
  * cuando tengas más fotos reales.
  */
 const photos: GalleryPhoto[] = [
-  {
-    src: escenario,
-    alt: "Renzo Parada facilitando frente a una audiencia",
-  },
-  { alt: "Espacio reservado para una foto de presentación" },
-  { alt: "Espacio reservado para una foto de presentación" },
-  { alt: "Espacio reservado para una foto de presentación" },
+  { src: publico1, alt: "Renzo Parada facilitando una sesión en vivo" },
+  { src: publico2, alt: "Renzo Parada presentando frente a una gran audiencia" },
+  { src: publico3, alt: "Renzo Parada hablando en un evento con mesas" },
+  { src: publico4, alt: "Renzo Parada presentando sobre liderazgo" },
 ];
 
 export function Gallery() {
