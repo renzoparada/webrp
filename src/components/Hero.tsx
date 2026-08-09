@@ -105,10 +105,10 @@ export function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 1 }}
-          className="mt-16 grid grid-cols-3 gap-6 border-t border-white/10 pt-8 sm:max-w-lg"
+          className="mt-16 grid grid-cols-1 gap-6 border-t border-white/10 pt-8 sm:grid-cols-[repeat(2,auto)_1fr] sm:items-start sm:gap-10 lg:max-w-3xl"
         >
           {hero.stats.map((stat) => (
-            <div key={stat.label}>
+            <div key={stat.label} className="max-w-[16rem]">
               <div className="font-display text-3xl text-bone sm:text-4xl">
                 <Counter value={stat.value} suffix={stat.suffix} />
               </div>

@@ -29,8 +29,8 @@ export const site = {
   social: {
     instagram: "https://www.instagram.com/renzoparada",
     linkedin: "https://www.linkedin.com/in/renzoparada",
-    tiktok: "https://www.tiktok.com/@renzoparada",
-    facebook: "https://www.facebook.com/renzoparada",
+    tiktok: "https://www.tiktok.com/@renzo.parada",
+    facebook: "https://www.facebook.com/renzoparadaoficial",
   },
 };
 
@@ -58,7 +58,12 @@ export const hero = {
   stats: [
     { value: 4, suffix: "", label: "Pilares de transformación" },
     { value: 3, suffix: "", label: "Metodologías propias certificadas" },
-    { value: 1, suffix: "", label: "Framework propio: PM Pro System" },
+    {
+      value: 1,
+      suffix: "",
+      label:
+        "Propósito: potenciar personas, equipos y empresas para lograr resultados extraordinarios",
+    },
   ],
 };
 
@@ -67,13 +72,12 @@ export const about = {
   heading: "No soy un consultor más",
   paragraphs: [
     "Soy Renzo Parada. He construido mi trabajo en la intersección de tres mundos que casi nunca se juntan: la gestión de proyectos, las ventas y el diseño de experiencias.",
-    "Soy Facilitador certificado en LEGO® Serious Play®, especialista en el Método Disney de atención al cliente, y creador del Project Manager Pro System, un framework integral de gestión de proyectos usado por profesionales en toda Latinoamérica.",
+    "Soy Facilitador certificado en LEGO® Serious Play®, especialista en el Método Disney de atención al cliente, y creador de experiencias integrales y omnicanales que potencian resultados en toda Latinoamérica.",
     "Mi trabajo no se trata de teoría. Se trata de sentarme con tu equipo, entender tu negocio y construir contigo un sistema — o una experiencia — que realmente funcione.",
   ],
   credentials: [
     "Facilitador LEGO® Serious Play®",
     "Especialista en Método Disney de Atención al Cliente",
-    "Creador del Project Manager Pro System",
     "Consultor y Asesor Empresarial",
   ],
   // TODO: enlace real de Emprendedores Makeover (web, Instagram, etc.)
@@ -117,7 +121,7 @@ export const pillars: Pillar[] = [
     audience:
       "Marcas y empresas que quieren que cada punto de contacto sea memorable",
     includes:
-      "Método Disney de atención al cliente, creación de experiencias de marca y conceptos para parques tematizados y espacios de entretenimiento",
+      "Método Disney de atención al cliente, creación de experiencias de marca, conceptos y espacios de entretenimiento",
     result: "Clientes que no solo compran: vuelven y recomiendan",
     cta: "Diseñemos tu experiencia",
   },
@@ -229,7 +233,7 @@ export const testimonials: Testimonial[] = [
 export const resource = {
   eyebrow: "Recursos",
   heading: "Lleva la metodología a tu propio ritmo",
-  text: "Si buscas una herramienta completa para gestionar proyectos de principio a fin, conoce el Project Manager Pro System: un sistema integral con plantillas, dashboards y certificación, pensado para profesionales de habla hispana. Muy pronto disponible en SER, la app propia de Renzo.",
+  text: "Si buscas una herramienta completa para gestionar proyectos de principio a fin, conoce el Project Manager Pro System: un sistema integral con plantillas, dashboards y certificación, pensado para profesionales de habla hispana.",
   productName: "Project Manager Pro System",
   cta: "Conoce el Project Manager Pro System",
 };
