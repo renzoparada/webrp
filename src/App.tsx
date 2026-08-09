@@ -5,6 +5,7 @@ import { Navbar } from "./components/Navbar";
 import { Hero } from "./components/Hero";
 import { About } from "./components/About";
 import { StageBand } from "./components/StageBand";
+import { Gallery } from "./components/Gallery";
 import { Services } from "./components/Services";
 import { Methodology } from "./components/Methodology";
 import { Results } from "./components/Results";
@@ -25,6 +26,7 @@ function App() {
         <Hero />
         <About />
         <StageBand />
+        <Gallery />
         <Services />
         <Methodology />
         <Results />

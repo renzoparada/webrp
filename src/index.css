@@ -155,6 +155,14 @@ h4 {
       transparent
     );
   }
+
+  .scrollbar-hide {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 /* Lenis smooth scroll helpers */
